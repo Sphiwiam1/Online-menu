@@ -1,0 +1,111 @@
+
+/* Header */
+#header h1 {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: ivory;
+    font-size: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+    z-index: 500;
+    background-color: lightgray;
+    display: block;
+    background-image: url(media/Night\ sky\ Background\ image.jpg);
+}
+
+body {
+    background-color: #266d72;
+    margin: 0;
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+/* Menu front cover */
+#firstpage_container {
+    box-sizing: border-box;
+    margin-top: 20px;  /* Adjust based on header height */
+
+    display: flex;
+    width: 100%;
+    height: 110vh;           /* Equal height layout */
+    align-items: stretch;    /* Ensures both sides stretch to same height */
+}
+
+/* Left Container */
+#left {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* align to the left side (not centered horizontally) */
+    background-color: #266d72;
+    overflow: hidden;
+}
+
+/* Headline Inside Left Container */
+#left h2 {
+    font-size: 30px;
+    text-align: justify;
+    word-spacing: 80px;
+}
+
+/* Image styling */
+#left img {
+    width: 90%;
+    height: 540px;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right container */
+#right {
+    width: 30%;
+    height: 88vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 17.5vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(59, 165, 165);
+}
+
+/* Menu list */
+#right li {
+    list-style-type: none;  /* removes bullets */
+    line-height: 80px;
+    padding-left: 0;        /* optional: removes default indentation */
+    margin: 0;              /* optional: removes extra spacing */
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 40px;
+}
+
+/* List links */
+#right li a {
+    text-decoration: none;  /* removes underline */
+    color: tan;           /* link color */
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: auto; /* Three rows: 100px, auto-height, 50px */
+    gap: 10px;
+    padding: 20px;
+}
+
+#wines-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: auto; /* Three rows: 100px, auto-height, 50px */
+    gap: 10px;
+    padding: 20px;
+}
